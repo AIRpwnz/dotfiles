@@ -1,0 +1,77 @@
+theme = "ao"
+
+[editor]
+rulers = [80, 100]
+mouse = true
+end-of-line-diagnostics = "hint"
+cursorline = true
+jump-label-alphabet = "asdfqwebcghijklmnoprtuvxyz"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+left = [
+        "mode",
+        "spinner",
+        "separator",
+        "file-absolute-path",
+        "file-modification-indicator"
+        ]
+        
+right = [
+        "file-line-ending",
+        "separator",
+        "selections",
+        "separator",
+        "position",
+        "separator",
+        "position-percentage",
+        "separator",
+        "total-line-numbers"
+        ]
+        
+center = [
+        "version-control",
+        "spacer",
+        "diagnostics"
+        ]
+
+[editor.indent-guides]
+render = true
+character = "▏" # Some characters that work well: "▏", "┆", "┊", "⸽"
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+newline = "all"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+
+[keys.normal.space]
+l = [
+    ":write-all", 
+    ":new", 
+    ":insert-output lazygit", 
+    ":buffer-close!", 
+    ":redraw", 
+    ":reload-all"
+]
+
+[keys.normal]
+# https://yazi-rs.github.io/docs/tips/#helix-with-zellij
+C-y = ":sh zellij run -c -f -x 10%% -y 10%% --width 80%% --height 80%% -- zsh ~/.config/helix/yazi-picker.sh open"

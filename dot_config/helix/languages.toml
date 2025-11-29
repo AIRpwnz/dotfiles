@@ -1,0 +1,45 @@
+[language-server.pyright]
+command = "pyright-langserver"
+args = [ "--stdio" ]
+
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "basic"
+autoImportCompletions = true
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[language-server.ruff.config.settings]
+args = ["--ignore", "E501"]
+
+[language-server.harper-ls]
+command = "harper-ls"
+args = ["--stdio"]
+
+[[language]]
+name = "python"
+auto-format = true
+formatter = { command = "ruff", args = ["format", "-"] }
+language-servers = [
+  { name = "ruff", only-features = [ "format", "diagnostics" ] },
+  { name = "pyright", except-features = [ "format", "diagnostics" ] },
+  { name = "harper-ls" }
+]
+
+[[language]]
+name = "yaml"
+auto-format = false
+formatter = { command = "prettier", args = ["--parser", "yaml" ] }
+
+[[language]]
+name = "markdown"
+text-width = 80
+soft-wrap.wrap-at-text-width = true
+language-servers = ["harper-ls"]
+formatter = { command = 'prettier', args = [
+  "--parser",
+  "markdown",
+  "--prose-wrap",
+  "never",
+]}

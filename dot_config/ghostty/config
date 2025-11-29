@@ -1,0 +1,10 @@
+font-family = "Iosevka Term"
+font-size = 16
+fullscreen = true
+theme = "iTerm2 Default"
+shell-integration = zsh
+bell-features = no-attention
+
+macos-option-as-alt = left
+#keybind = alt+left=unbind
+#keybind = alt+right=unbind
