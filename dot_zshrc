@@ -1,0 +1,62 @@
+# zmodload zsh/zprof
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="clean"
+HIST_STAMPS="mm/dd/yyyy"
+plugins=(
+	git
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+	web-search
+	z
+	)
+source $ZSH/oh-my-zsh.sh
+
+# Source keychain-env
+source $HOME/keychain-env.sh
+
+source $HOME/.zsh_secrets
+export LANG=en_US.UTF-8
+
+export PATH="/opt/homebrew/bin:$PATH:/opt/homebrew/sbin:$HOME/.local/bin:$HOME/.local/share/uv/python/bin"
+typeset -U PATH
+
+# Set default editor
+export EDITOR="hx"
+export VISUAL="hx"
+export VIEWER="hx"
+
+# Enable fzf
+source <(fzf --zsh)
+
+# Alias cat ~> bat
+alias cat=bat
+
+# Alias yazi
+alias yz=y
+
+# Alias helix
+alias h=hx
+
+# Alias fastfetch
+alias ff=fastfetch
+
+export GPG_TTY=$(tty)
+
+# run fastfetch on new tab
+fastfetch
+
+# Terminal color support
+export TERM=xterm-256color
+
+# yazi shell-wrapper https://yazi-rs.github.io/docs/quick-start#shell-wrapper
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+# eza (better ls)
+alias ls="eza --color=always --long --git --icons=always"
