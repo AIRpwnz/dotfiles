@@ -26,6 +26,10 @@ export EDITOR="hx"
 export VISUAL="hx"
 export VIEWER="hx"
 
+alias dig='dog'
+
+alias ks='k9s'
+
 # Enable fzf
 source <(fzf --zsh)
 
@@ -40,6 +44,9 @@ alias h=hx
 
 # Alias fastfetch
 alias ff=fastfetch
+
+# eza (better ls)
+alias ls="eza --color=always --long --git --icons=always"
 
 export GPG_TTY=$(tty)
 
@@ -58,6 +65,3 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
-
-# eza (better ls)
-alias ls="eza --color=always --long --git --icons=always"
