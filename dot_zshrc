@@ -15,6 +15,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/keychain-env.sh
 
 source $HOME/.zsh_secrets
+
 export LANG=en_US.UTF-8
 
 export PATH="/opt/homebrew/bin:$PATH:/opt/homebrew/sbin:$HOME/.local/bin:$HOME/.local/share/uv/python/bin"
