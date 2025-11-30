@@ -56,6 +56,12 @@ fastfetch
 # Terminal color support
 export TERM=xterm-256color
 
+# httpstat
+export HTTPSTAT_SHOW_SPEED=true
+
+#Ansible
+export ANSIBLE_MAX_DIFF_SIZE=1048576
+
 # yazi shell-wrapper https://yazi-rs.github.io/docs/quick-start#shell-wrapper
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
