@@ -26,8 +26,6 @@ export EDITOR="hx"
 export VISUAL="hx"
 export VIEWER="hx"
 
-alias dig='dog'
-
 alias ks='k9s'
 
 # Enable fzf
