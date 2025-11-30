@@ -59,7 +59,10 @@ export TERM=xterm-256color
 # httpstat
 export HTTPSTAT_SHOW_SPEED=true
 
-#Ansible
+# k9s
+export K9S_CONFIG_DIR="$HOME/.config/k9s"
+
+# Ansible
 export ANSIBLE_MAX_DIFF_SIZE=1048576
 
 # yazi shell-wrapper https://yazi-rs.github.io/docs/quick-start#shell-wrapper
