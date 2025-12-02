@@ -1,0 +1,16 @@
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Python3
+__pycache__/
+.venv/
+
+# Ansible
+.ansible/
+
+# Personal
+.notes/
