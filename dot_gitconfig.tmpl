@@ -1,0 +1,22 @@
+[include]
+    path = ~/.gitconfig.local
+
+[gpg]
+    program = gpg
+
+[core]
+    excludesfile = ~/.globalgitignore
+    autocrlf = input
+    editor = hx
+    ignorecase = false
+
+[alias]
+    d = diff
+    c = commit
+    ca = commit -a
+
+[log]
+    date = iso
+
+[rerere]
+    enabled = true
