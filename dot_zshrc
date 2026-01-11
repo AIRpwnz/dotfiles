@@ -46,6 +46,10 @@ alias ff=fastfetch
 # eza (better ls)
 alias ls="eza --color=always --long --git --icons=always"
 
+# Alias lumen
+alias le="lumen explain"
+alias ld="lumen draft"
+
 export GPG_TTY=$(tty)
 
 # run fastfetch on new tab
