@@ -47,8 +47,8 @@ alias ff=fastfetch
 alias ls="eza --color=always --long --git --icons=always"
 
 # Alias lumen
-alias le="lumen explain"
-alias ld="lumen draft"
+alias lue="lumen explain"
+alias lud="lumen draft"
 
 export GPG_TTY=$(tty)
 
