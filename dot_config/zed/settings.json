@@ -7,61 +7,76 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "buffer_font_family": "Iosevka",
-  "edit_predictions": {
-    "disabled_globs": [],
-    "mode": "eager",
-    "copilot": {
-      "proxy": null,
-      "proxy_no_verify": null
+  // --- Server Configurations ---
+  "context_servers": {
+    "mcp-server-grafana": {
+      "enabled": false,
+      "remote": true,
+      "settings": {},
     },
-    "enabled_in_text_threads": true
   },
-  "features": {
-    "edit_prediction_provider": "copilot"
+  "agent_servers": {
+    "codex": {
+      "favorite_models": ["gpt-5.2-codex/xhigh"],
+      "default_config_options": {},
+      "favorite_config_option_values": {},
+    },
   },
+  // --- AI & Agent Settings ---
   "agent": {
-    "inline_assistant_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
-    },
     "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini"
-    }
+      "model": "gpt-5-mini",
+    },
+    "inline_assistant_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4",
+    },
   },
-  "base_keymap": "JetBrains",
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
+  "features": {
+    "edit_prediction_provider": "copilot",
   },
-  "ui_font_size": 15,
-  "buffer_font_size": 15,
-  "helix_mode": true,
+  "edit_predictions": {
+    "mode": "eager",
+    "enabled_in_text_threads": true,
+    "disabled_globs": [],
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+    },
+  },
+  // --- Appearance ---
   "theme": {
     "mode": "system",
     "light": "One Dark",
-    "dark": "One Dark"
+    "dark": "One Dark",
   },
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
+  "buffer_font_family": "Iosevka",
+  // --- Editor Behavior ---
+  "base_keymap": "JetBrains",
+  "helix_mode": true,
+  // --- Language & File-Specific Settings ---
   "languages": {
     "Ansible": {
       "prettier": {
-        "allowed": true
-      }
+        "allowed": true,
+      },
     },
     "Python": {
       "language_servers": ["ruff", "pyright"],
       "prettier": {
-        "allowed": false
-      }
+        "allowed": false,
+      },
     },
     "YAML": {
       "format_on_save": "off",
       "prettier": {
-        "allowed": false
-      }
-    }
+        "allowed": false,
+      },
+    },
   },
   "file_types": {
     "Ansible": [
@@ -82,7 +97,12 @@
       "**/playbooks/*.yml",
       "**/playbooks/*.yaml",
       "**playbook*.yml",
-      "**playbook*.yaml"
-    ]
-  }
+      "**playbook*.yaml",
+    ],
+  },
+  // --- Telemetry ---
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
 }
