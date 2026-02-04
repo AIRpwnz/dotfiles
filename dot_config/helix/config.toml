@@ -80,3 +80,5 @@ C-y = [
   ':open %sh{cat /tmp/unique-file}',
   ':redraw',
 ]
+
+X = ["extend_line_up", "extend_to_line_bounds"]
