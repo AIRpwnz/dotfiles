@@ -34,10 +34,8 @@
       "model": "claude-sonnet-4",
     },
   },
-  "features": {
-    "edit_prediction_provider": "copilot",
-  },
   "edit_predictions": {
+    "provider": "copilot",
     "mode": "eager",
     "enabled_in_text_threads": true,
     "disabled_globs": [],
@@ -49,8 +47,8 @@
   // --- Appearance ---
   "theme": {
     "mode": "system",
-    "light": "One Dark",
-    "dark": "One Dark",
+    "light": "Aura Soft Dark",
+    "dark": "Aura Soft Dark",
   },
   "ui_font_size": 15,
   "buffer_font_size": 15,
