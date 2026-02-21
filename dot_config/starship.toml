@@ -15,7 +15,7 @@ $python\
 $character"""
 
 [directory]
-style = "green"
+style = "bold green"
 
 [character]
 success_symbol = "[->](purple)"
@@ -24,7 +24,7 @@ vimcmd_symbol = "[<-](green)"
 
 [git_branch]
 format = "[$branch]($style)"
-style = "blue"
+style = "yellow"
 
 [git_status]
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
@@ -39,15 +39,15 @@ stashed = "≡"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "blue"
+style = "yellow"
 
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
 
 [python]
-format = "[$virtualenv]($style) "
-style = "bright-black"
+format = "[${pyenv_prefix}(${version} )(($virtualenv) )]($style) "
+style = "bright-green"
 detect_extensions = []
 detect_files = []
 
@@ -55,4 +55,4 @@ detect_files = []
 disabled = false
 time_format = "%T"
 format = '[ $time ]($style)'
-style = "blue"
+style = "yellow"
