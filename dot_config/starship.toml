@@ -1,5 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+add_newline = false
+right_format = "$time"
 format = """
 $username\
 $hostname\
@@ -37,7 +39,7 @@ stashed = "≡"
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+style = "blue"
 
 [cmd_duration]
 format = "[$duration]($style) "
@@ -48,3 +50,9 @@ format = "[$virtualenv]($style) "
 style = "bright-black"
 detect_extensions = []
 detect_files = []
+
+[time]
+disabled = false
+time_format = "%T"
+format = '[ $time ]($style)'
+style = "blue"
