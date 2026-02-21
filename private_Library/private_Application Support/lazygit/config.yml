@@ -1,12 +1,12 @@
 customCommands:
   - key: '<c-l>'
     context: 'files'
-    command: 'lumen draft | pbcopy; pbpaste'
+    command: 'zsh -c "lumen draft | tee >(pbcopy)"'
     loadingText: 'Generating message...'
     output: popup
   - key: '<c-k>'
     context: 'files'
-    command: 'lumen draft -c {{.Form.Context | quote}} | pbcopy'
+    command: 'zsh -c "lumen draft -c {{.Form.Context | quote}} | tee >(pbcopy)"'
     loadingText: 'Generating message...'
     prompts:
       - type: 'input'
