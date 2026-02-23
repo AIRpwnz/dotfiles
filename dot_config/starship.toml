@@ -19,14 +19,18 @@ disabled = true
 
 [directory]
 style = "bold green"
+truncation_length = 7
+truncation_symbol = "…/"
+truncate_to_repo = false
 
 [character]
-success_symbol = "[->](purple)"
-error_symbol = "[!=>](red)"
-vimcmd_symbol = "[<-](green)"
+success_symbol = "[❯](bold purple)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold green)"
 
 [git_branch]
-format = ">> [$branch]($style)"
+symbol = " "
+format = "|[ $symbol$branch]($style)"
 style = "yellow"
 
 [git_status]
@@ -45,11 +49,13 @@ format = '\([$state( $progress_current/$progress_total)]($style)\) '
 style = "yellow"
 
 [cmd_duration]
+min_time = 10000
 format = "[$duration]($style) "
 style = "yellow"
 
 [python]
-format = "[${pyenv_prefix}(${version} )(($virtualenv) )]($style) "
+symbol = " "
+format = "|[${pyenv_prefix} $symbol(${version} )(($virtualenv) )]($style)"
 style = "bright-green"
 detect_extensions = []
 detect_files = []
@@ -57,5 +63,5 @@ detect_files = []
 [time]
 disabled = false
 time_format = "%T"
-format = '[ $time ]($style)'
-style = "yellow"
+format = '[$time ]($style)'
+style = "dimmed yellow"
