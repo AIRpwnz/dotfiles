@@ -29,7 +29,7 @@ language-servers = [
 
 [[language]]
 name = "yaml"
-auto-format = false
+auto-format = true
 formatter = { command = "prettier", args = ["--parser", "yaml" ] }
 
 [[language]]
