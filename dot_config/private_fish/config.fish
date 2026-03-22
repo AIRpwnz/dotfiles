@@ -9,9 +9,10 @@ set -gx TERM xterm-256color
 set -gx HTTPSTAT_SHOW_SPEED true
 set -gx K9S_CONFIG_DIR "$HOME/.config/k9s"
 set -gx ANSIBLE_MAX_DIFF_SIZE 1048576
+set -gx HELIX_RUNTIME "$HOME/.config/helix/runtime"
 
 # Path Configuration
-fish_add_path /opt/homebrew/bin /opt/homebrew/sbin $HOME/.local/bin $HOME/.local/share/uv/python/bin
+fish_add_path /opt/homebrew/bin /opt/homebrew/sbin $HOME/.local/bin $HOME/.local/share/uv/python/bin $HOME/.cargo/bin
 
 # Local Secrets
 if test -f $HOME/.fish_secrets

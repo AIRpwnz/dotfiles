@@ -82,3 +82,6 @@ C-y = [
 ]
 
 X = ["extend_line_up", "extend_to_line_bounds"]
+
+[keys.insert]
+tab = "inline_completion_accept"
