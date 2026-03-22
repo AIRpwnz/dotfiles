@@ -11,6 +11,11 @@ set -gx K9S_CONFIG_DIR "$HOME/.config/k9s"
 set -gx ANSIBLE_MAX_DIFF_SIZE 1048576
 set -gx HELIX_RUNTIME "$HOME/.config/helix/runtime"
 
+set -gx XDG_CACHE_HOME $HOME/.cache
+set -gx XDG_CONFIG_HOME $HOME/.config
+set -gx XDG_DATA_HOME $HOME/.local/share
+set -gx XDG_STATE_HOME $HOME/.local/state
+
 # Path Configuration
 fish_add_path /opt/homebrew/bin /opt/homebrew/sbin $HOME/.local/bin $HOME/.local/share/uv/python/bin $HOME/.cargo/bin
 
