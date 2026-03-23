@@ -42,12 +42,11 @@ auto-format = true
 formatter = { command = "prettier", args = ["--parser", "yaml" ] }
 language-servers = [ "yaml-language-server", "ansible-language-server", "copilot" ]
 
-
 [[language]]
 name = "markdown"
 text-width = 80
 soft-wrap.wrap-at-text-width = true
-language-servers = ["harper-ls"]
+language-servers = ["harper-ls", "copilot"]
 formatter = { command = 'prettier', args = [
   "--parser",
   "markdown",
@@ -55,3 +54,14 @@ formatter = { command = 'prettier', args = [
   "never",
 ]}
 
+[[language]]
+name = "hcl"
+language-servers = [ "terraform-ls", "copilot"]
+
+[[language]]
+name = "tfvars"
+language-servers = [ "terraform-ls", "copilot" ]
+
+[[language]]
+name = "toml"
+language-servers = [ "copilot" ]
