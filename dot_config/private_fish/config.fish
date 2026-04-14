@@ -35,10 +35,12 @@ if status is-interactive
     abbr yz y
     abbr h hx
     abbr ff fastfetch
-    abbr ls eza --color=always --long --git --icons=always
     abbr lue lumen explain
     abbr lud lumen draft
     abbr zwork "zellij -n work -s work"
+
+    # Alias
+    alias ls "eza --color=always --long --git --icons=always"
 
     # Tool Integrations
     fzf --fish | source
