@@ -52,7 +52,6 @@
   "edit_predictions": {
     "provider": "copilot",
     "mode": "eager",
-    "enabled_in_text_threads": true,
     "disabled_globs": [],
     "copilot": {
       "proxy": null,
