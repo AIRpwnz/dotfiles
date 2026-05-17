@@ -1,3 +1,32 @@
+gui:
+  theme:
+    activeBorderColor:
+      - '#45b1e8'
+      - bold
+    inactiveBorderColor:
+      - '#838a97'
+    searchingActiveBorderColor:
+      - '#ffba00'
+      - bold
+    optionsTextColor:
+      - '#6eb0ff'
+    selectedLineBgColor:
+      - '#2c5484'
+    inactiveViewSelectedLineBgColor:
+      - '#0d1526'
+    cherryPickedCommitFgColor:
+      - '#080d15'
+    cherryPickedCommitBgColor:
+      - '#81be83'
+    markedBaseCommitFgColor:
+      - '#080d15'
+    markedBaseCommitBgColor:
+      - '#ffba00'
+    unstagedChangesColor:
+      - '#fa7970'
+    defaultFgColor:
+      - '#f3f4f6'
+
 customCommands:
   - key: '<c-l>'
     context: 'files'
