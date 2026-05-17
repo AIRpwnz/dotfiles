@@ -9,16 +9,16 @@
 {
   // --- Server Configurations ---
   "project_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "context_servers": {
     "mcp-server-grafana": {
@@ -28,6 +28,9 @@
     },
   },
   "agent_servers": {
+    "gemini": {
+      "type": "registry",
+    },
     "codex-acp": {
       "type": "registry",
       "favorite_models": ["gpt-5.2-codex/xhigh"],
