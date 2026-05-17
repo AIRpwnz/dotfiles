@@ -270,7 +270,7 @@ load_plugins {
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-// theme "ao"
+theme "ao"
  
 // Choose the base input mode of zellij.
 // Default: normal
@@ -439,4 +439,3 @@ default_layout "default"
 
 // Disable startup tips
 show_startup_tips false
-
