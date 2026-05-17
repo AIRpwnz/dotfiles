@@ -6,8 +6,8 @@ overall = { bg = "#080d15" }
 [mgr]
 cwd = { fg = "#6eb0ff", bold = true }
 
-hovered = { fg = "#f3f4f6", bg = "#2c5484", bold = true }
-preview_hovered = { fg = "#080d15", bg = "#d6ecff", bold = true }
+hovered = { fg = "#080d15", bg = "#45b1e8", bold = true }
+preview_hovered = { fg = "#080d15", bg = "#99c7ff", bold = true }
 
 find_keyword = { fg = "#ffba00", bold = true, italic = true, underline = true }
 find_position = { fg = "#d2a8ff", bg = "reset", bold = true }
@@ -29,7 +29,7 @@ border_style = { fg = "#838a97" }
 [indicator]
 parent = { fg = "#254862" }
 current = { fg = "#f3f4f6", bg = "#2c5484", bold = true }
-preview = { fg = "#d6ecff", bold = true }
+preview = { fg = "#99c7ff", bold = true }
 padding = { open = "██", close = " " }
 
 [tabs]
@@ -37,7 +37,7 @@ active = { fg = "#080d15", bg = "#45b1e8", bold = true }
 inactive = { fg = "#838a97", bg = "#000000" }
 
 [mode]
-normal_main = { fg = "#f3f4f6", bg = "#2c5484", bold = true }
+normal_main = { fg = "#080d15", bg = "#81be83", bold = true }
 normal_alt = { fg = "#f3f4f6", bg = "#2c5484" }
 
 select_main = { fg = "#080d15", bg = "#45b1e8", bold = true }
@@ -125,7 +125,7 @@ rules = [
 	{ mime = "application/{pdf,doc,rtf}", fg = "#81be83" },
 	{ mime = "vfs/{absent,stale}", fg = "#838a97" },
 	{ url = "*", is = "orphan", fg = "#fa7970" },
-	{ url = "*", is = "exec", fg = "#ffba00" },
+	{ url = "*", is = "exec", fg = "#81be83" },
 	{ url = "*", fg = "#dadada" },
 	{ url = "*/", fg = "#45b1e8" },
 ]
