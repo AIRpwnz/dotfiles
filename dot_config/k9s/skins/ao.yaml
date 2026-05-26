@@ -1,0 +1,110 @@
+# -----------------------------------------------------------------------------
+# Ao skin
+# -----------------------------------------------------------------------------
+
+fg: &fg "#f8fafc"
+text: &text "#f3f4f6"
+bg: &bg "#080d15"
+surface: &surface "#0d1526"
+overlay: &overlay "#2c5484"
+line: &line "#1f2937"
+muted: &muted "#a8b0bd"
+cwd: &cwd "#6eb0ff"
+blue: &blue "#45b1e8"
+blue2: &blue2 "#99c7ff"
+green: &green "#81be83"
+yellow: &yellow "#ffba00"
+orange: &orange "#ff9000"
+red: &red "#fa7970"
+purple: &purple "#d2a8ff"
+
+k9s:
+  body:
+    fgColor: *text
+    bgColor: *bg
+    logoColor: *blue
+  prompt:
+    fgColor: *fg
+    bgColor: *surface
+    suggestColor: *purple
+  info:
+    fgColor: *cwd
+    sectionColor: *blue
+  dialog:
+    fgColor: *fg
+    bgColor: *surface
+    buttonFgColor: *bg
+    buttonBgColor: *blue
+    buttonFocusFgColor: *bg
+    buttonFocusBgColor: *green
+    labelFgColor: *yellow
+    fieldFgColor: *fg
+  help:
+    fgColor: *fg
+    bgColor: *bg
+    keyColor: *green
+    numKeyColor: *yellow
+    sectionColor: *purple
+  frame:
+    border:
+      fgColor: *muted
+      focusColor: *blue
+    menu:
+      fgColor: *fg
+      fgStyle: bold
+      keyColor: *green
+      numKeyColor: *yellow
+    crumbs:
+      fgColor: *fg
+      bgColor: *overlay
+      activeColor: *blue2
+    status:
+      newColor: *blue
+      modifyColor: *purple
+      addColor: *green
+      errorColor: *red
+      highlightColor: *yellow
+      killColor: *muted
+      completedColor: *muted
+    title:
+      fgColor: *fg
+      bgColor: *overlay
+      highlightColor: *orange
+      counterColor: *purple
+      filterColor: *yellow
+  views:
+    charts:
+      bgColor: default
+      defaultDialColors:
+        - *blue
+        - *red
+      defaultChartColors:
+        - *green
+        - *yellow
+    table:
+      fgColor: *text
+      bgColor: *bg
+      cursorColor: *blue
+      header:
+        fgColor: *fg
+        bgColor: *surface
+        sorterColor: *yellow
+        selectedSortColumnColor: *blue2
+    xray:
+      fgColor: *fg
+      bgColor: *bg
+      cursorColor: *line
+      graphicColor: *blue
+      showIcons: false
+    yaml:
+      keyColor: *green
+      colonColor: *muted
+      valueColor: *fg
+    logs:
+      fgColor: *text
+      bgColor: *bg
+      indicator:
+        fgColor: *fg
+        bgColor: *overlay
+        toggleOnColor: *green
+        toggleOffColor: *red

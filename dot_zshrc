@@ -63,6 +63,7 @@ export HTTPSTAT_SHOW_SPEED=true
 
 # k9s
 export K9S_CONFIG_DIR="$HOME/.config/k9s"
+export K9S_SKIN=ao
 
 # Ansible
 export ANSIBLE_MAX_DIFF_SIZE=1048576

@@ -8,6 +8,7 @@ set -gx GPG_TTY (tty)
 set -gx TERM xterm-256color
 set -gx HTTPSTAT_SHOW_SPEED true
 set -gx K9S_CONFIG_DIR "$HOME/.config/k9s"
+set -gx K9S_SKIN ao
 set -gx ANSIBLE_MAX_DIFF_SIZE 1048576
 set -gx HELIX_RUNTIME "$HOME/.config/helix/runtime"
 
