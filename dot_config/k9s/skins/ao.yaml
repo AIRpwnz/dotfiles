@@ -67,10 +67,10 @@ k9s:
       killColor: *muted
       completedColor: *muted
     title:
-      fgColor: *fg
-      bgColor: *overlay
-      highlightColor: *orange
-      counterColor: *purple
+      fgColor: *green
+      bgColor: default
+      highlightColor: *yellow
+      counterColor: *muted
       filterColor: *yellow
   views:
     charts:
