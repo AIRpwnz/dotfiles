@@ -105,6 +105,6 @@ k9s:
       bgColor: *bg
       indicator:
         fgColor: *fg
-        bgColor: *overlay
+        bgColor: *bg
         toggleOnColor: *green
         toggleOffColor: *red
