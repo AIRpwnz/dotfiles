@@ -7,6 +7,8 @@ text: &text "#f3f4f6"
 bg: &bg "#080d15"
 surface: &surface "#0d1526"
 overlay: &overlay "#2c5484"
+crumbBg: &crumbBg "#101a2d"
+crumbActive: &crumbActive "#174a7c"
 line: &line "#1f2937"
 muted: &muted "#a8b0bd"
 cwd: &cwd "#6eb0ff"
@@ -56,8 +58,8 @@ k9s:
       numKeyColor: *yellow
     crumbs:
       fgColor: *fg
-      bgColor: *overlay
-      activeColor: *blue2
+      bgColor: *crumbBg
+      activeColor: *crumbActive
     status:
       newColor: *blue
       modifyColor: *purple
