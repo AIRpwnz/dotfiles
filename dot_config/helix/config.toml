@@ -64,11 +64,18 @@ cursor-line = "warning" # show warnings and errors on the cursorline inline
 
 [keys.normal.space]
 l = [
-    ":write-all", 
-    ":new", 
-    ":insert-output lazygit", 
-    ":buffer-close!", 
-    ":redraw", 
+    ":write-all",
+    ":new",
+    ":insert-output lazygit",
+    ":buffer-close!",
+    ":redraw",
+    ":reload-all"
+]
+
+m = [
+    ":write-all",
+    ":sh zellij run --in-place --close-on-exit -- lumen diff >/dev/null",
+    ":redraw",
     ":reload-all"
 ]
 

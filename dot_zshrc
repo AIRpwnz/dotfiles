@@ -49,6 +49,7 @@ alias ls="eza --color=always --long --git --icons=always"
 # Alias lumen
 alias lue="lumen explain"
 alias lud="lumen draft"
+alias ludf="lumen diff"
 
 export GPG_TTY=$(tty)
 
@@ -80,4 +81,3 @@ function y() {
 
 # Zoxide
 eval "$(zoxide init zsh)"
-

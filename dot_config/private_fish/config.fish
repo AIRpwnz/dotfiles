@@ -38,6 +38,7 @@ if status is-interactive
     abbr ff fastfetch
     abbr lue lumen explain
     abbr lud lumen draft
+    abbr ludf lumen diff
     abbr zwork "zellij -n work -s work"
 
     # Alias
