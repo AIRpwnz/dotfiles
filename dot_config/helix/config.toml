@@ -62,6 +62,10 @@ tabpad = "·" # Tabs will look like "→···" (depending on tab width)
 [editor.inline-diagnostics]
 cursor-line = "warning" # show warnings and errors on the cursorline inline
 
+[editor.inline-blame]
+show = "cursor-line"
+auto-fetch = false
+
 [keys.normal.space]
 l = [
     ":write-all",
