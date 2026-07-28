@@ -40,6 +40,7 @@ if status is-interactive
     abbr lud lumen draft
     abbr ludf lumen diff
     abbr zwork "zellij -n work -s work"
+    abbr whois quien
 
     # Alias
     alias ls "eza --color=always --long --git --icons=always"
