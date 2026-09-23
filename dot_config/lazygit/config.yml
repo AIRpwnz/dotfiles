@@ -1,44 +1,52 @@
 gui:
   theme:
     activeBorderColor:
-      - '#45b1e8'
+      - "#45b1e8"
       - bold
     inactiveBorderColor:
-      - '#838a97'
+      - "#838a97"
     searchingActiveBorderColor:
-      - '#ffba00'
+      - "#ffba00"
       - bold
     optionsTextColor:
-      - '#6eb0ff'
+      - "#6eb0ff"
     selectedLineBgColor:
-      - '#2c5484'
+      - "#2c5484"
     inactiveViewSelectedLineBgColor:
-      - '#0d1526'
+      - "#0d1526"
     cherryPickedCommitFgColor:
-      - '#080d15'
+      - "#080d15"
     cherryPickedCommitBgColor:
-      - '#81be83'
+      - "#81be83"
     markedBaseCommitFgColor:
-      - '#080d15'
+      - "#080d15"
     markedBaseCommitBgColor:
-      - '#ffba00'
+      - "#ffba00"
     unstagedChangesColor:
-      - '#fa7970'
+      - "#fa7970"
     defaultFgColor:
-      - '#f3f4f6'
+      - "#f3f4f6"
+
+os:
+  editPreset: "helix (hx)"
+
+keybinding:
+  universal:
+    edit: [e, o]
+    openFile: O
 
 customCommands:
-  - key: '<c-l>'
-    context: 'files'
+  - key: "<c-l>"
+    context: "files"
     command: 'zsh -c "lumen draft | tee >(pbcopy)"'
-    loadingText: 'Generating message...'
+    loadingText: "Generating message..."
     output: popup
-  - key: '<c-k>'
-    context: 'files'
+  - key: "<c-k>"
+    context: "files"
     command: 'zsh -c "lumen draft -c {{.Form.Context | quote}} | tee >(pbcopy)"'
-    loadingText: 'Generating message...'
+    loadingText: "Generating message..."
     prompts:
-      - type: 'input'
-        title: 'Context'
-        key: 'Context'
+      - type: "input"
+        title: "Context"
+        key: "Context"
     output: popup
