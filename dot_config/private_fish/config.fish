@@ -5,7 +5,6 @@ set -gx EDITOR hx
 set -gx VISUAL hx
 set -gx VIEWER hx
 set -gx GPG_TTY (tty)
-set -gx TERM xterm-256color
 set -gx HTTPSTAT_SHOW_SPEED true
 set -gx K9S_CONFIG_DIR "$HOME/.config/k9s"
 set -gx K9S_SKIN ao
@@ -43,12 +42,16 @@ if status is-interactive
     abbr whois quien
 
     # Alias
-    alias ls "eza --color=always --long --git --icons=always"
+    alias ls "eza --color=auto --icons=auto"
+    alias ll "eza --color=auto --icons=auto --long --git"
+    alias la "eza --color=auto --icons=auto --long --git --all"
 
     # Tool Integrations
     fzf --fish | source
     zoxide init fish | source
 
-    # Startup Info
-    fastfetch
+    # Startup Info (skip inside zellij panes)
+    if not set -q ZELLIJ
+        fastfetch
+    end
 end
