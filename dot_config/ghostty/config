@@ -4,3 +4,4 @@ fullscreen = true
 theme = "iTerm2 Default"
 bell-features = no-attention
 macos-option-as-alt = left
+shell-integration-features = ssh-env,ssh-terminfo
