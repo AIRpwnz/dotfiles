@@ -46,6 +46,15 @@ if status is-interactive
     alias ll "eza --color=auto --icons=auto --long --git"
     alias la "eza --color=auto --icons=auto --long --git --all"
 
+    # Servers lack xterm-ghostty terminfo; Ghostty's ssh-env integration does not reach zellij panes
+    function ssh --wraps ssh
+        if test "$TERM" = xterm-ghostty
+            TERM=xterm-256color command ssh $argv
+        else
+            command ssh $argv
+        end
+    end
+
     # Tool Integrations
     fzf --fish | source
     zoxide init fish | source
